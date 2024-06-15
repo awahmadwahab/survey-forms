@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0"
+    
+</head>
+
+<body id="body">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">DIET PLAN SURVEY BY DN.NOOR FATIMA</p>
+
+<form id="survey-form">
+
+<label class="label" id="name-label" for="name">Name:</label>
+<input class="in" type="text" id="name" name="name" placeholder="Enter your name" required/>
+<br>
+  <label  id="email-label" for="email">Email:</label>
+  <input class="in" type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+  <label  id="number-label" for="number">Age:</label>
+  <br>
+  <input class="in" type="number" id="number" name="age" min="1" max="120" placeholder="Enter your age" required>
+<br>
+        <label for="dropdown">Choose an option:</label>
+        <select id="dropdown" name="options" required>
+      <option value="">Select an option</option>
+      <option value="1">Weight gain</option>
+      <option value="2">Weight lose</option>
+      <option value="2">Disease case</option>
+      <option value="2">Other</option>
+        </select>
+<br>
+        <hr>
+    <div id="gender">
+        <p >Select your gender:</p>
+        <input type="radio" id="gender-male" name="gender" value="male" required>
+        <label for="gender-male">Male</label>
+
+        <input type="radio" id="gender-female" name="gender" value="female" required>
+        <label for="gender-female">Female</label>
+    </div>
+
+<fieldset >
+  <p  class="text">This diet plan :<p>
+<div id="checkbox">
+    <label for="prefer"><input type="checkbox" id="prefer" value="preference"/> according to my preference</label>
+<br>
+    <label for="help"><input type="checkbox" id="help" value="achieve"/> helps me to achieve my goal</label>
+<br>
+    <label for="sets"><input type="checkbox" id="sets" value="routine"/> sets my best routine</label>
+<br>
+    <label for="future"><input type="checkbox" id="future" value="follow"/> will follow in future</label>
+<br>
+    <label for="people" ><input type="checkbox" id="people" value="people"/> will recommend to other people</label>
+</div>
+</fieldset>
+
+<p class="text">Any Queries / Comments :</p>
+<textarea  rows="5" cols="30"></textarea>
+<br>
+<button id="submit" type="submit">Submit</button>
+    
+    </form>
+</body>
+</html>
+
+
+
